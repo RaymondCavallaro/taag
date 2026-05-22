@@ -1,0 +1,23 @@
+title: "ACES/TAAG Reasoning Guide"
+version: "0.1-draft"
+status: "draft"
+output:
+  markdown: "dist/markdown/ACES_TAAG_Reasoning_Guide_v0.1-draft.md"
+  pdf: "dist/pdf/ACES_TAAG_Reasoning_Guide_v0.1-draft.pdf"
+sections:
+  - README.md
+  - docs/NAVIGATION.md
+  - docs/REPOSITORY_DESIGN.md
+  - docs/BUILD_PROCESS.md
+  - 01_FOUNDATIONS/00_OVERVIEW.md
+  - 02_TAAG_MANUAL/00_OVERVIEW.md
+  - 02_TAAG_MANUAL/07_DIAGNOSTIC_PROTOCOL.md
+  - 03_ACES_ONTOLOGY/00_OVERVIEW.md
+  - 03_ACES_ONTOLOGY/01_CORE_COMPRESSION.md
+  - 03_ACES_ONTOLOGY/03_ADAPTIVE_INVARIANTS.md
+  - 03_ACES_ONTOLOGY/06_EPISTEMIC_LAYER.md
+  - 05_AI_PROTOCOLS/00_OVERVIEW.md
+  - 05_AI_PROTOCOLS/01_AI_REASONING_RULES.md
+  - 05_AI_PROTOCOLS/07_AI_MISUSE_RISKS.md
+  - 06_CASE_STUDIES/AI_AGENT_DEPLOYMENT.md
+  - 09_GLOSSARY/GLOSSARY.md

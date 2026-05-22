@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ACES/TAAG Case Study",
+  "type": "object",
+  "required": ["system_summary", "analysis_viability", "participants", "cautions"],
+  "additionalProperties": false,
+  "properties": {
+    "system_summary": { "type": "string" },
+    "analysis_viability": { "type": "string" },
+    "participants": { "type": "array", "items": { "type": "string" } },
+    "flows_and_conductance": { "type": ["string", "object", "null"] },
+    "observability_and_metrics": { "type": ["string", "object", "null"] },
+    "reconstructability": { "type": ["string", "null"] },
+    "optionality": { "type": ["string", "null"] },
+    "participation_integrity": { "type": ["string", "null"] },
+    "capture_pressures": { "type": ["string", "object", "null"] },
+    "intervention_options": { "type": "array", "items": { "type": "string" } },
+    "cautions": { "type": "array", "items": { "type": "string" } }
+  }
+}
+

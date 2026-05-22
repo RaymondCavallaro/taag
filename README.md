@@ -1,0 +1,110 @@
+# ACES/TAAG
+
+Status: draft
+
+ACES is an adaptive systems ontology and reasoning framework that models and analyzes the long-term adaptive viability of systems through topology, conductance, reconstructability, optionality, and anti-capture dynamics.
+
+In ACES, health refers to the preservation of adaptive continuity, grounded observability, reconstructability, and future viable pathways under changing and adversarial conditions.
+
+TAAG is a methodology that operationalizes ACES through diagnostic protocols, reasoning frameworks, AI interaction patterns, case studies, and adaptive governance methodologies, embodied as a living, reconstructable repository.
+
+This repository is the source of truth. Generated PDFs, combined Markdown files, and other release artifacts are snapshots built from the modular source files.
+
+## Start Here
+
+- Web/documentation home: [index.md](index.md)
+- Navigation guide: [docs/NAVIGATION.md](docs/NAVIGATION.md)
+- Repository design: [docs/REPOSITORY_DESIGN.md](docs/REPOSITORY_DESIGN.md)
+- Build process: [docs/BUILD_PROCESS.md](docs/BUILD_PROCESS.md)
+- New to ACES/TAAG: [01_FOUNDATIONS/00_OVERVIEW.md](01_FOUNDATIONS/00_OVERVIEW.md)
+- Want to use it practically: [02_TAAG_MANUAL/00_OVERVIEW.md](02_TAAG_MANUAL/00_OVERVIEW.md)
+- Want the diagnostic protocol: [02_TAAG_MANUAL/07_DIAGNOSTIC_PROTOCOL.md](02_TAAG_MANUAL/07_DIAGNOSTIC_PROTOCOL.md)
+- Want to use it with AI: [05_AI_PROTOCOLS/00_OVERVIEW.md](05_AI_PROTOCOLS/00_OVERVIEW.md)
+- Want theory and ontology: [03_ACES_ONTOLOGY/00_OVERVIEW.md](03_ACES_ONTOLOGY/00_OVERVIEW.md)
+- Want formal/geometric work: [04_ACES_GA/00_OVERVIEW.md](04_ACES_GA/00_OVERVIEW.md)
+- Want examples: [06_CASE_STUDIES/00_OVERVIEW.md](06_CASE_STUDIES/00_OVERVIEW.md)
+- Want terminology: [09_GLOSSARY/GLOSSARY.md](09_GLOSSARY/GLOSSARY.md)
+- Want to contribute: [00_META/CONTRIBUTING.md](00_META/CONTRIBUTING.md)
+
+Every major documentation path should provide a way back to this start page. The repo should avoid dead ends: readers should be able to move from overview to detail, from detail back to overview, and from any layer back to the main routing surface.
+
+## What This Repository Is
+
+This repo is a modular cognition substrate for ACES/TAAG. It is designed to support:
+
+- human learning,
+- AI-assisted reasoning,
+- diagnostic protocols,
+- case studies,
+- public essays,
+- formal research notes,
+- and versioned release artifacts.
+
+The repository itself should behave like a small TAAG object:
+
+- clear topology: readers can tell where to go,
+- good conductance: files link across layers without collapsing them,
+- layered participation: beginners, practitioners, researchers, and AI systems have different entry points,
+- reconstructability: modular files can be forked, versioned, and recombined,
+- grounded observability: limitations, failures, and open questions are visible,
+- anti-capture: canonical, draft, experimental, and deprecated material remain distinguishable.
+
+## Repository Map
+
+- `00_META/`: governance, contribution rules, limitations, status labels, known failures, open questions.
+- `01_FOUNDATIONS/`: human-readable grounding and motivation.
+- `02_TAAG_MANUAL/`: operational handbook and diagnostic method.
+- `03_ACES_ONTOLOGY/`: conceptual architecture and core invariants.
+- `04_ACES_GA/`: advanced geometric/formal substrate.
+- `05_AI_PROTOCOLS/`: AI reasoning rules, prompt patterns, uncertainty controls, misuse risks.
+- `06_CASE_STUDIES/`: grounded applications.
+- `07_ARTICLES/`: public-facing essays and article series.
+- `08_DIAGRAMS/`: diagrams and diagram source notes.
+- `09_GLOSSARY/`: terminology and symbols.
+- `10_APPENDICES/`: related frameworks, reading lists, math notes, overflow.
+- `experimental/`: speculative concepts not yet integrated into the core.
+- `deprecated/`: preserved material no longer recommended.
+- `build/`: scripts and build configuration.
+- `dist/`: generated release artifacts.
+- `docs/`: navigation, GitHub Pages entry support, repository design, and build philosophy.
+- `templates/`: authoring templates.
+- `schemas/`: machine-readable structures.
+
+This structure is part of the framework's operation, not just storage. It embodies TAAG by preserving clear topology, navigable conductance, layered participation, reconstructability, grounded observability, and anti-capture boundaries.
+
+## Build Process
+
+The build process preserves modular cognition while producing shareable artifacts:
+
+```text
+modular markdown source
+    -> ordered assembly
+    -> combined markdown snapshot
+    -> optional PDF release artifact
+```
+
+The source files remain authoritative. The generated files in `dist/` are snapshots for reading, archiving, citation, and AI ingestion.
+
+Current command:
+
+```bash
+build/assemble.sh
+```
+
+If Pandoc is installed, the script also creates a PDF snapshot. If not, it still creates the combined Markdown artifact.
+
+## Release Philosophy
+
+Do not wait for finished. Release when the framework is coherent enough for external cognition:
+
+- the concepts fit together,
+- the layers remain distinguishable,
+- the protocol can be applied,
+- examples reveal what the abstractions mean,
+- and the limitations are visible.
+
+## Current Phase
+
+Architecture stabilization.
+
+The current goal is not to write every possible document. The goal is to stabilize the adaptive grammar so future modules, examples, prompts, and tools can attach without fragmenting the framework.

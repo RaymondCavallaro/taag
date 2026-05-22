@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ACES State Vector",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "reconstructability": { "type": ["string", "number", "null"] },
+    "optionality": { "type": ["string", "number", "null"] },
+    "participation_topology": { "type": ["string", "object", "null"] },
+    "capture_pressure": { "type": ["string", "number", "null"] },
+    "conductance_topology": { "type": ["string", "object", "null"] },
+    "adaptive_elasticity": { "type": ["string", "number", "null"] },
+    "adaptive_plasticity": { "type": ["string", "number", "null"] },
+    "legitimacy": { "type": ["string", "number", "null"] },
+    "observability_integrity": { "type": ["string", "number", "null"] },
+    "analysis_viability": { "type": ["string", "number", "null"] }
+  }
+}
+

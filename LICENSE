@@ -1,0 +1,11 @@
+License pending.
+
+This repository is in an early architecture-stabilization phase. Choose an explicit license before public release or external contribution.
+
+Possible directions to evaluate:
+
+- Creative Commons Attribution 4.0 for public documentation.
+- Creative Commons Attribution-ShareAlike 4.0 for reciprocal documentation reuse.
+- MIT or Apache-2.0 for software/build scripts.
+- Dual licensing if documentation and code need different terms.
+

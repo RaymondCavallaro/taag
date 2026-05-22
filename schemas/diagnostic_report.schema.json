@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ACES/TAAG Diagnostic Report",
+  "type": "object",
+  "required": ["system_summary", "analysis_viability", "observations", "inferences", "missing_signals", "cautions"],
+  "additionalProperties": false,
+  "properties": {
+    "system_summary": { "type": "string" },
+    "analysis_viability": { "type": "string" },
+    "observations": { "type": "array", "items": { "type": "string" } },
+    "inferences": { "type": "array", "items": { "type": "string" } },
+    "missing_signals": { "type": "array", "items": { "type": "string" } },
+    "structural_map": { "type": ["string", "object", "null"] },
+    "pressure_analysis": { "type": ["string", "object", "null"] },
+    "regime_classification": { "type": ["string", "null"] },
+    "intervention_options": { "type": "array", "items": { "type": "string" } },
+    "cautions": { "type": "array", "items": { "type": "string" } },
+    "non_conclusions": { "type": "array", "items": { "type": "string" } }
+  }
+}
+
