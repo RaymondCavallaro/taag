@@ -7,7 +7,11 @@ Generated from modular repository sources.
 
 # ACES/TAAG
 
+A modular adaptive systems framework for analyzing governance, institutions, AI systems, and socio-technical environments through topology, reconstructability, observability, and anti-capture dynamics.
+
 Status: draft
+
+Current maturity: active architectural stabilization. Concepts, terminology, and structure may evolve as operational testing and case studies expand.
 
 ACES is an adaptive systems ontology and reasoning framework that models and analyzes the long-term adaptive viability of systems through topology, conductance, reconstructability, optionality, and anti-capture dynamics.
 
@@ -19,7 +23,7 @@ This repository is the source of truth. Generated PDFs, combined Markdown files,
 
 ## Start Here
 
-- Web/documentation home: [index.md](index.md)
+- Documentation home: [docs/index.md](docs/index.md)
 - Navigation guide: [docs/NAVIGATION.md](docs/NAVIGATION.md)
 - Repository design: [docs/REPOSITORY_DESIGN.md](docs/REPOSITORY_DESIGN.md)
 - Build process: [docs/BUILD_PROCESS.md](docs/BUILD_PROCESS.md)
@@ -34,6 +38,33 @@ This repository is the source of truth. Generated PDFs, combined Markdown files,
 - Want to contribute: [00_META/CONTRIBUTING.md](00_META/CONTRIBUTING.md)
 
 Every major documentation path should provide a way back to this start page. The repo should avoid dead ends: readers should be able to move from overview to detail, from detail back to overview, and from any layer back to the main routing surface.
+
+## Status Layers
+
+- canonical: stable enough for operational use within the current framework.
+- draft: coherent but still evolving.
+- experimental: speculative, incomplete, or not yet validated.
+- deprecated: preserved for continuity and history, but no longer recommended.
+
+## What This Is Not
+
+ACES/TAAG is not:
+
+- a prediction oracle,
+- a replacement for domain expertise,
+- a universal scoring system,
+- or a way to turn complex legitimacy questions into one number.
+
+It is a structured adaptive reasoning framework.
+
+## Example Applications
+
+- AI governance and agent deployment.
+- Platform and protocol analysis.
+- Institutional diagnostics.
+- Open-source coordination.
+- Educational systems.
+- Adaptive organizational analysis.
 
 ## What This Repository Is
 
@@ -116,7 +147,38 @@ Do not wait for finished. Release when the framework is coherent enough for exte
 
 Architecture stabilization.
 
-The current goal is not to write every possible document. The goal is to stabilize the adaptive grammar so future modules, examples, prompts, and tools can attach without fragmenting the framework.
+The current goal is not exhaustive expansion. The goal is to stabilize the adaptive grammar so future modules, examples, prompts, and tools can attach without fragmenting the framework.
+
+
+<!-- Source: docs/index.md -->
+
+# ACES/TAAG Documentation
+
+Status: draft
+
+Back to repository start: [../README.md](../README.md)
+
+ACES is an adaptive systems ontology and reasoning framework that models and analyzes the long-term adaptive viability of systems through topology, conductance, reconstructability, optionality, and anti-capture dynamics.
+
+TAAG operationalizes ACES through diagnostic protocols, reasoning frameworks, AI interaction patterns, case studies, and adaptive governance methodologies.
+
+## Choose a Path
+
+- Start from the repository router: [../README.md](../README.md)
+- Understand navigation: [NAVIGATION.md](NAVIGATION.md)
+- Understand why the repo is structured this way: [REPOSITORY_DESIGN.md](REPOSITORY_DESIGN.md)
+- Understand PDF and Markdown builds: [BUILD_PROCESS.md](BUILD_PROCESS.md)
+- Learn the foundations: [../01_FOUNDATIONS/00_OVERVIEW.md](../01_FOUNDATIONS/00_OVERVIEW.md)
+- Use the TAAG manual: [../02_TAAG_MANUAL/00_OVERVIEW.md](../02_TAAG_MANUAL/00_OVERVIEW.md)
+- Read the ACES ontology: [../03_ACES_ONTOLOGY/00_OVERVIEW.md](../03_ACES_ONTOLOGY/00_OVERVIEW.md)
+- Use AI protocols: [../05_AI_PROTOCOLS/00_OVERVIEW.md](../05_AI_PROTOCOLS/00_OVERVIEW.md)
+- Explore case studies: [../06_CASE_STUDIES/00_OVERVIEW.md](../06_CASE_STUDIES/00_OVERVIEW.md)
+- Check terminology: [../09_GLOSSARY/GLOSSARY.md](../09_GLOSSARY/GLOSSARY.md)
+
+## Navigation Rule
+
+The documentation should avoid dead ends. Move from this page into a layer, then return here or to the README whenever you need to reorient.
+
 
 
 <!-- Source: docs/NAVIGATION.md -->
@@ -126,6 +188,8 @@ The current goal is not to write every possible document. The goal is to stabili
 Status: draft
 
 Back to start: [../README.md](../README.md)
+
+Documentation home: [index.md](index.md)
 
 ACES/TAAG documentation is designed as navigable adaptive cognition.
 
@@ -163,7 +227,6 @@ start
 ```
 
 This matters because ACES/TAAG is layered. A reader should be able to move from beginner explanation to operational protocol to ontology to case study without losing orientation.
-
 
 
 <!-- Source: docs/REPOSITORY_DESIGN.md -->

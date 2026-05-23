@@ -4,6 +4,8 @@ Status: draft
 
 Back to start: [../README.md](../README.md)
 
+Documentation home: [index.md](index.md)
+
 ACES/TAAG documentation is designed as navigable adaptive cognition.
 
 Navigation is not a cosmetic layer. It is part of how the repository embodies the framework:
@@ -40,4 +42,3 @@ start
 ```
 
 This matters because ACES/TAAG is layered. A reader should be able to move from beginner explanation to operational protocol to ontology to case study without losing orientation.
-
