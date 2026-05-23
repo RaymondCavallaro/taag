@@ -25,6 +25,7 @@ mkdir -p "$ROOT_DIR/dist/markdown" "$ROOT_DIR/dist/pdf"
   done <<'MANIFEST'
 README.md
 00_META/AI_ASSISTANCE.md
+00_META/SEMANTIC_STRUCTURE.md
 docs/index.md
 docs/NAVIGATION.md
 docs/REPOSITORY_DESIGN.md

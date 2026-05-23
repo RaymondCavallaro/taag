@@ -1,28 +1,82 @@
+---
+status: draft
+epistemic_class: operational
+layer: aces_ontology
+audience:
+  - practitioner
+  - researcher
+  - ai_system
+tags:
+  - adaptive_invariants
+  - reconstructability
+  - observability
+  - optionality
+  - anti_capture
+---
+
 # Adaptive Invariants
 
 Status: draft
 
 Adaptive invariants are properties ACES/TAAG tries to preserve across changing conditions.
 
+<concept>
+name: Adaptive Invariants
+type: ontology_collection
+status: draft
+epistemic_class: operational
+summary: Properties ACES/TAAG tries to preserve across changing conditions to support grounded adaptive continuity.
+</concept>
+
 ## Adaptive Continuity
 
 Preserve long-term adaptive viability.
+
+<adaptive_invariant>
+name: Adaptive Continuity
+summary: Preserve long-term adaptive viability.
+failure_risk: short-term optimization that damages future adaptive capacity
+</adaptive_invariant>
 
 ## Distributed Optionality
 
 Preserve recomposable future pathways.
 
+<adaptive_invariant>
+name: Distributed Optionality
+summary: Preserve recomposable future pathways.
+failure_risk: narrowing future paths into dependency, lock-in, or irreversible concentration
+</adaptive_invariant>
+
 ## Anti-Totalization
 
 Prevent irreversible dominance without correction capacity.
+
+<adaptive_invariant>
+name: Anti-Totalization
+summary: Prevent irreversible dominance without correction capacity.
+failure_risk: unchecked dominance, monopoly of adaptive flow, or non-correctable authority
+</adaptive_invariant>
 
 ## Reconstructability
 
 Preserve operational forkability and recoverability.
 
+<adaptive_invariant>
+name: Reconstructability
+summary: Preserve operational forkability and recoverability.
+failure_risk: systems become impossible to repair, fork, exit, or recompose
+</adaptive_invariant>
+
 ## Coherent Participation
 
 Preserve continuity-preserving participation under stress.
+
+<adaptive_invariant>
+name: Coherent Participation
+summary: Preserve continuity-preserving participation under stress.
+failure_risk: participation becomes distorted, destructive, symbolic-only, or structurally impossible
+</adaptive_invariant>
 
 ## Capability Amplification
 
@@ -68,3 +122,8 @@ Preserve coherent long-term orientation while remaining reality-coupled and revi
 
 Preserve reality-coupled analyzability and anti-metric-capture integrity.
 
+<adaptive_invariant>
+name: Grounded Observability
+summary: Preserve reality-coupled analyzability and anti-metric-capture integrity.
+failure_risk: proxy drift, hidden consequences, metric capture, observability collapse
+</adaptive_invariant>

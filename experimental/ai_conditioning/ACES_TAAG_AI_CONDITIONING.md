@@ -1,3 +1,20 @@
+---
+status: experimental
+epistemic_class: AI methodology hypothesis
+confidence: low-to-medium
+layer: experimental
+audience:
+  - researcher
+  - ai_system
+  - practitioner
+tags:
+  - ai_conditioning
+  - reasoning_scaffold
+  - uncertainty
+  - observability
+  - anti_capture
+---
+
 # ACES/TAAG AI Conditioning
 
 Status: experimental
@@ -7,6 +24,22 @@ Epistemic class: AI methodology hypothesis
 Confidence: low-to-medium
 
 Purpose: explore whether ACES/TAAG reasoning scaffolds can improve AI behavior around uncertainty, grounded observability, anti-capture reasoning, reconstructability, missing-signal detection, and self-critique.
+
+<experimental_hypothesis>
+name: ACES/TAAG AI Conditioning
+epistemic_class: AI methodology hypothesis
+confidence: low-to-medium
+summary: ACES/TAAG reasoning scaffolds may improve AI behavior around uncertainty, missing-signal detection, grounded observability, anti-capture reasoning, and self-critique.
+non_claims:
+- does not solve AI alignment
+- does not guarantee robustness
+- does not make recursive AI conditioning safe by default
+validation_pathway:
+- compare AI outputs with and without scaffolding
+- test missing-signal detection
+- test cross-model critique workflows
+- document failures where scaffolded outputs become jargon without better analysis
+</experimental_hypothesis>
 
 ## Safer Name
 
@@ -99,4 +132,3 @@ If repeated tests show value, parts of this document may graduate into:
 ## Exit Paths
 
 If the approach mainly produces jargon, false confidence, or weak analysis, it should remain experimental or be deprecated.
-

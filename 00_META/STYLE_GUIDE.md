@@ -55,3 +55,11 @@ machine-specific absolute paths
 drive-specific paths
 personal home-directory paths
 ```
+
+## Semantic Structure
+
+Use lightweight frontmatter and selective semantic XML-style blocks where they improve retrieval, AI ingestion, or future tooling.
+
+Do not wrap normal prose in heavy markup.
+
+See [SEMANTIC_STRUCTURE.md](SEMANTIC_STRUCTURE.md).

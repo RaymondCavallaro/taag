@@ -32,6 +32,7 @@ Portions of the framework and documentation were developed with AI-assisted reas
 - Want terminology: [09_GLOSSARY/GLOSSARY.md](09_GLOSSARY/GLOSSARY.md)
 - Want to contribute: [00_META/CONTRIBUTING.md](00_META/CONTRIBUTING.md)
 - Want the AI assistance notice: [00_META/AI_ASSISTANCE.md](00_META/AI_ASSISTANCE.md)
+- Want semantic formatting conventions: [00_META/SEMANTIC_STRUCTURE.md](00_META/SEMANTIC_STRUCTURE.md)
 
 Every major documentation path should provide a way back to this start page. The repo should avoid dead ends: readers should be able to move from overview to detail, from detail back to overview, and from any layer back to the main routing surface.
 
