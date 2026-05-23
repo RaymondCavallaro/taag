@@ -78,3 +78,40 @@ The recommended automation path is GitHub Actions:
 - optionally deploy GitHub Pages when documentation changes land on `main`.
 
 PDF generation should probably be release-triggered first, not generated on every commit. This keeps normal documentation iteration light while making versioned snapshots deliberate.
+
+## Release Artifact Workflow
+
+The release artifact workflow lives at:
+
+```text
+.github/workflows/release-artifacts.yml
+```
+
+It runs when:
+
+- a tag matching `v*` is pushed,
+- or a maintainer runs it manually from the GitHub Actions tab.
+
+The workflow:
+
+- installs Pandoc and LaTeX,
+- checks for forbidden machine-specific absolute path segments,
+- runs `build/assemble.sh`,
+- verifies that both Markdown and PDF artifacts exist,
+- creates or updates the GitHub Release for the tag,
+- uploads the generated Markdown and PDF snapshots.
+
+Recommended release trigger:
+
+```bash
+git tag v0.1.0
+git push origin v0.1.0
+```
+
+For manual runs, provide a release tag such as:
+
+```text
+v0.1.0-draft
+```
+
+Manual runs are useful for draft snapshots. Tag pushes should be used for intentional public releases.

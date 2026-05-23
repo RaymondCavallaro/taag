@@ -1,0 +1,111 @@
+name: Build release artifacts
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: "Release tag to create or update, for example v0.1.0-draft"
+        required: true
+        type: string
+      prerelease:
+        description: "Mark the release as a prerelease"
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-artifacts-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build-release-artifacts:
+    name: Build and attach release artifacts
+    runs-on: ubuntu-latest
+    env:
+      GUIDE_MD: dist/markdown/ACES_TAAG_Reasoning_Guide_v0.1-draft.md
+      GUIDE_PDF: dist/pdf/ACES_TAAG_Reasoning_Guide_v0.1-draft.pdf
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Pandoc and LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            pandoc \
+            texlive-latex-base \
+            texlive-latex-recommended \
+            texlive-latex-extra \
+            texlive-fonts-recommended
+
+      - name: Check path hygiene
+        run: |
+          home_segment="$(printf '/%s/' home)"
+          mount_segment="$(printf '/%s/' mnt)"
+
+          if grep -RIn "$home_segment" --exclude-dir=.git .; then
+            echo "Found forbidden machine-specific path segment"
+            exit 1
+          fi
+
+          if grep -RIn "$mount_segment" --exclude-dir=.git .; then
+            echo "Found forbidden machine-specific path segment"
+            exit 1
+          fi
+
+          if grep -RInP '(?<![A-Za-z])[A-Za-z]:[\\/]' --exclude-dir=.git .; then
+            echo "Found forbidden drive-specific path segment"
+            exit 1
+          fi
+
+      - name: Build Markdown and PDF
+        run: |
+          build/assemble.sh
+          test -f "$GUIDE_MD"
+          test -f "$GUIDE_PDF"
+
+      - name: Resolve release metadata
+        id: release
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            tag="${{ inputs.release_tag }}"
+            prerelease="${{ inputs.prerelease }}"
+          else
+            tag="${GITHUB_REF_NAME}"
+            prerelease="false"
+          fi
+
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "prerelease=$prerelease" >> "$GITHUB_OUTPUT"
+
+      - name: Create or update GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
+          PRERELEASE: ${{ steps.release.outputs.prerelease }}
+        run: |
+          title="ACES/TAAG ${RELEASE_TAG}"
+          notes="Release artifacts generated from modular Markdown sources. The repository remains the source of truth; these files are versioned snapshots."
+
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            gh release upload "$RELEASE_TAG" "$GUIDE_MD" "$GUIDE_PDF" --clobber
+          else
+            args=()
+            if [ "$PRERELEASE" = "true" ]; then
+              args+=(--prerelease)
+            fi
+
+            gh release create "$RELEASE_TAG" \
+              "$GUIDE_MD" \
+              "$GUIDE_PDF" \
+              --title "$title" \
+              --notes "$notes" \
+              --target "$GITHUB_SHA" \
+              "${args[@]}"
+          fi
