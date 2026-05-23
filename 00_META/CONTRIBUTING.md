@@ -4,6 +4,8 @@ Status: draft
 
 ACES/TAAG contributions should improve clarity, applicability, reconstructability, or grounded observability.
 
+AI assistance is allowed, but should be treated as reasoning support rather than authority. See [AI_ASSISTANCE.md](AI_ASSISTANCE.md).
+
 ## Contribution Principles
 
 - Preserve modular cognition: one file should represent one coherent mental unit.
@@ -12,6 +14,7 @@ ACES/TAAG contributions should improve clarity, applicability, reconstructabilit
 - Name limitations and failure modes instead of hiding them.
 - Prefer grounded examples over abstraction expansion.
 - Avoid adding new terms unless they improve diagnosis, explanation, or action.
+- Disclose or preserve meaningful AI mediation when it affects structure, claims, or interpretation.
 
 ## Before Adding a Concept
 

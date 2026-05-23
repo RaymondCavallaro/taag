@@ -4,6 +4,8 @@ Status: draft
 
 This repository should be governed as a living example of ACES/TAAG.
 
+AI assistance is disclosed in [AI_ASSISTANCE.md](AI_ASSISTANCE.md). AI systems may support drafting, critique, organization, and reasoning scaffolding, but they are not authoritative sources for the framework.
+
 ## Governance Goals
 
 - Preserve reconstructability through modular files and versioned releases.
@@ -11,6 +13,7 @@ This repository should be governed as a living example of ACES/TAAG.
 - Preserve distributed participation through clear contribution paths.
 - Preserve anti-capture dynamics through status labels and experimental/deprecated boundaries.
 - Preserve adaptive continuity by allowing the framework to evolve without losing history.
+- Preserve AI-context integrity by making AI assistance visible, bounded, and subject to human governance.
 
 ## Decision Heuristics
 
@@ -30,4 +33,3 @@ Be cautious with changes that:
 - make AI outputs seem more certain than they are,
 - obscure limitations,
 - or make the repo harder to fork, cite, or audit.
-

@@ -14,6 +14,8 @@ TAAG is a methodology that operationalizes ACES through diagnostic protocols, re
 
 This repository is the source of truth. Generated PDFs, combined Markdown files, and other release artifacts are snapshots built from the modular source files.
 
+Portions of the framework and documentation were developed with AI-assisted reasoning support. See [00_META/AI_ASSISTANCE.md](00_META/AI_ASSISTANCE.md).
+
 ## Start Here
 
 - Documentation home: [docs/index.md](https://raymondcavallaro.github.io/taag/docs/index.md)
@@ -29,6 +31,7 @@ This repository is the source of truth. Generated PDFs, combined Markdown files,
 - Want examples: [06_CASE_STUDIES/00_OVERVIEW.md](06_CASE_STUDIES/00_OVERVIEW.md)
 - Want terminology: [09_GLOSSARY/GLOSSARY.md](09_GLOSSARY/GLOSSARY.md)
 - Want to contribute: [00_META/CONTRIBUTING.md](00_META/CONTRIBUTING.md)
+- Want the AI assistance notice: [00_META/AI_ASSISTANCE.md](00_META/AI_ASSISTANCE.md)
 
 Every major documentation path should provide a way back to this start page. The repo should avoid dead ends: readers should be able to move from overview to detail, from detail back to overview, and from any layer back to the main routing surface.
 

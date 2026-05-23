@@ -6,6 +6,7 @@ output:
   pdf: "dist/pdf/ACES_TAAG_Reasoning_Guide_v0.1-draft.pdf"
 sections:
   - README.md
+  - 00_META/AI_ASSISTANCE.md
   - docs/index.md
   - docs/NAVIGATION.md
   - docs/REPOSITORY_DESIGN.md
