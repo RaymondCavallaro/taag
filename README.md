@@ -16,7 +16,7 @@ This repository is the source of truth. Generated PDFs, combined Markdown files,
 
 ## Start Here
 
-- Documentation home: [docs/index.md](docs/index.md)
+- Documentation home: [docs/index.md](https://raymondcavallaro.github.io/taag/docs/index.md)
 - Navigation guide: [docs/NAVIGATION.md](docs/NAVIGATION.md)
 - Repository design: [docs/REPOSITORY_DESIGN.md](docs/REPOSITORY_DESIGN.md)
 - Build process: [docs/BUILD_PROCESS.md](docs/BUILD_PROCESS.md)
