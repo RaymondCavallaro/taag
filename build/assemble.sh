@@ -2,15 +2,16 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-OUT_REL="dist/markdown/ACES_TAAG_Reasoning_Guide_v0.1-draft.md"
-PDF_REL="dist/pdf/ACES_TAAG_Reasoning_Guide_v0.1-draft.pdf"
+VERSION_TAG="${RELEASE_TAG:-${GITHUB_REF_NAME:-v0.1-draft}}"
+OUT_REL="dist/markdown/ACES_TAAG_Reasoning_Guide_${VERSION_TAG}.md"
+PDF_REL="dist/pdf/ACES_TAAG_Reasoning_Guide_${VERSION_TAG}.pdf"
 OUT_MD="$ROOT_DIR/$OUT_REL"
 OUT_PDF="$ROOT_DIR/$PDF_REL"
 
 mkdir -p "$ROOT_DIR/dist/markdown" "$ROOT_DIR/dist/pdf"
 
 {
-  echo "# ACES/TAAG Reasoning Guide v0.1 Draft"
+  echo "# ACES/TAAG Reasoning Guide ${VERSION_TAG}"
   echo
   echo "Generated from modular repository sources."
   echo
@@ -26,6 +27,7 @@ mkdir -p "$ROOT_DIR/dist/markdown" "$ROOT_DIR/dist/pdf"
 README.md
 00_META/AI_ASSISTANCE.md
 00_META/SEMANTIC_STRUCTURE.md
+00_META/VERSIONING.md
 docs/index.md
 docs/NAVIGATION.md
 docs/REPOSITORY_DESIGN.md

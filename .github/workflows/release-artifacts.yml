@@ -27,9 +27,6 @@ jobs:
   build-release-artifacts:
     name: Build and attach release artifacts
     runs-on: ubuntu-latest
-    env:
-      GUIDE_MD: dist/markdown/ACES_TAAG_Reasoning_Guide_v0.1-draft.md
-      GUIDE_PDF: dist/pdf/ACES_TAAG_Reasoning_Guide_v0.1-draft.pdf
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -65,12 +62,6 @@ jobs:
             exit 1
           fi
 
-      - name: Build Markdown and PDF
-        run: |
-          build/assemble.sh
-          test -f "$GUIDE_MD"
-          test -f "$GUIDE_PDF"
-
       - name: Resolve release metadata
         id: release
         run: |
@@ -84,6 +75,20 @@ jobs:
 
           echo "tag=$tag" >> "$GITHUB_OUTPUT"
           echo "prerelease=$prerelease" >> "$GITHUB_OUTPUT"
+
+      - name: Build Markdown and PDF
+        env:
+          RELEASE_TAG: ${{ steps.release.outputs.tag }}
+        run: |
+          GUIDE_MD="dist/markdown/ACES_TAAG_Reasoning_Guide_${RELEASE_TAG}.md"
+          GUIDE_PDF="dist/pdf/ACES_TAAG_Reasoning_Guide_${RELEASE_TAG}.pdf"
+
+          echo "GUIDE_MD=$GUIDE_MD" >> "$GITHUB_ENV"
+          echo "GUIDE_PDF=$GUIDE_PDF" >> "$GITHUB_ENV"
+
+          build/assemble.sh
+          test -f "$GUIDE_MD"
+          test -f "$GUIDE_PDF"
 
       - name: Create or update GitHub release
         env:
