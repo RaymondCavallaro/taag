@@ -14,6 +14,7 @@ TAAG operationalizes ACES through diagnostic protocols, reasoning frameworks, AI
 - Understand navigation: [NAVIGATION.md](NAVIGATION.md)
 - Understand why the repo is structured this way: [REPOSITORY_DESIGN.md](REPOSITORY_DESIGN.md)
 - Understand PDF and Markdown builds: [BUILD_PROCESS.md](BUILD_PROCESS.md)
+- Understand versioning rules: [../00_META/VERSIONING.md](../00_META/VERSIONING.md)
 - Learn the foundations: [../01_FOUNDATIONS/00_OVERVIEW.md](../01_FOUNDATIONS/00_OVERVIEW.md)
 - Use the TAAG manual: [../02_TAAG_MANUAL/00_OVERVIEW.md](../02_TAAG_MANUAL/00_OVERVIEW.md)
 - Read the ACES ontology: [../03_ACES_ONTOLOGY/00_OVERVIEW.md](../03_ACES_ONTOLOGY/00_OVERVIEW.md)
@@ -24,4 +25,3 @@ TAAG operationalizes ACES through diagnostic protocols, reasoning frameworks, AI
 ## Navigation Rule
 
 The documentation should avoid dead ends. Move from this page into a layer, then return here or to the README whenever you need to reorient.
-

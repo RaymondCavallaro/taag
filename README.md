@@ -31,6 +31,7 @@ Portions of the framework and documentation were developed with AI-assisted reas
 - Want examples: [06_CASE_STUDIES/00_OVERVIEW.md](06_CASE_STUDIES/00_OVERVIEW.md)
 - Want terminology: [09_GLOSSARY/GLOSSARY.md](09_GLOSSARY/GLOSSARY.md)
 - Want to contribute: [00_META/CONTRIBUTING.md](00_META/CONTRIBUTING.md)
+- Want versioning rules: [00_META/VERSIONING.md](00_META/VERSIONING.md)
 - Want the AI assistance notice: [00_META/AI_ASSISTANCE.md](00_META/AI_ASSISTANCE.md)
 - Want semantic formatting conventions: [00_META/SEMANTIC_STRUCTURE.md](00_META/SEMANTIC_STRUCTURE.md)
 

@@ -26,6 +26,7 @@ Navigation is not a cosmetic layer. It is part of how the repository embodies th
 - Formal work: [../04_ACES_GA/00_OVERVIEW.md](../04_ACES_GA/00_OVERVIEW.md)
 - Examples: [../06_CASE_STUDIES/00_OVERVIEW.md](../06_CASE_STUDIES/00_OVERVIEW.md)
 - Glossary: [../09_GLOSSARY/GLOSSARY.md](../09_GLOSSARY/GLOSSARY.md)
+- Versioning: [../00_META/VERSIONING.md](../00_META/VERSIONING.md)
 
 ## Return Paths
 
