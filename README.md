@@ -55,6 +55,11 @@ ACES/TAAG is not:
 
 It is a structured adaptive reasoning framework.
 
+## License
+
+Unless otherwise noted, this repository is licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International License. See [LICENSE](LICENSE).
+
 ## Example Applications
 
 - AI governance and agent deployment.

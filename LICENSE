@@ -1,11 +1,17 @@
-License pending.
+Creative Commons Attribution-ShareAlike 4.0 International
 
-This repository is in an early architecture-stabilization phase. Choose an explicit license before public release or external contribution.
+Unless otherwise noted, ACES/TAAG repository contents are licensed under the
+Creative Commons Attribution-ShareAlike 4.0 International License.
 
-Possible directions to evaluate:
+You are free to share and adapt the material for any purpose, including
+commercially, provided that you give appropriate credit, indicate whether
+changes were made, and distribute contributions or derivatives under the same
+license.
 
-- Creative Commons Attribution 4.0 for public documentation.
-- Creative Commons Attribution-ShareAlike 4.0 for reciprocal documentation reuse.
-- MIT or Apache-2.0 for software/build scripts.
-- Dual licensing if documentation and code need different terms.
+Canonical license summary:
 
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Canonical legal code:
+
+https://creativecommons.org/licenses/by-sa/4.0/legalcode
